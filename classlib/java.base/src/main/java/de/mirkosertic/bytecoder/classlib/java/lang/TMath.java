@@ -338,4 +338,12 @@ public class TMath {
         }
         return r;
     }
+
+    public static long multiplyExact(final long x, final int y) {
+        return multiplyExact(x, (long)y);
+    }
+
+    public static long subtractExact(final long x, final long y) {
+        return addExact(x, -1 * y);
+    }
 }

@@ -25,4 +25,8 @@ public class TStringConcatHelper {
         final int index = (int)indexCoder;
         return new byte[index << coder];
     }
+
+    static String simpleConcat(Object a, Object b) {
+        return a.toString() + b.toString();
+    }
 }
